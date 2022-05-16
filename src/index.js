@@ -1,7 +1,21 @@
-import * as React from "react";
-import { render } from "react-dom";
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { ThemeProvider } from '@material-ui/core/styles';
+// import theme from "./theme";
 import App from "./App";
+import theme from './theme';
+
 
 const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+ReactDOM.render(
+
+    <React.StrictMode>
+        <ThemeProvider theme={theme}>
+            <App />
+        </ThemeProvider>
+    </React.StrictMode>
+
+
+
+
+    , rootElement);
