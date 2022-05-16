@@ -1,10 +1,10 @@
 import { createTheme } from "@material-ui/core";
-import { green, purple } from "@material-ui/core/colors";
+import { green, purple,blue } from "@material-ui/core/colors";
 
 const theme=createTheme({
     palette:{
         primary:purple,
-        secondary:green,
+        secondary:blue,
     },
     status:{
         danger:'orange',
