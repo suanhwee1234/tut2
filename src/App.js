@@ -3,17 +3,31 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { Button } from "@material-ui/core";
-
-const useStyles=makeStyles({
-buttonStyle:{
-  color:'red',
-  border:'none'
-}
-});
+import CoolButton from "./CoolButton"
 
 export default function App(){
-  const classes = useStyles();
-  return(<>
-    <Button className={classes.buttonStyle}>Small button</Button>
-    </>);
-};
+  const cool = true;
+  return <CoolButton cool={cool} />
+}
+
+
+
+// const useStyles=makeStyles({
+// buttonStyle:{
+//   color:'red',
+  
+// },
+// textStyle:{
+//   color:"green"
+// }
+// });
+
+// export default function App(){
+//   const  classes = useStyles();
+//   return(
+//   <>
+//   <Button className={classes.buttonStyle}>small button</Button>
+//   <h1 className={classes.textStyle}>this is text</h1>
+//   </>);
+ 
+// }
